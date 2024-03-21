@@ -1,13 +1,16 @@
 import './App.css'
-import { Collapse, initTWE } from 'tw-elements';
+import { Collapse, initTWE, Input} from 'tw-elements';
 import { Acordeon } from './acordeon';
+import { useEffect } from "react";
 function App() {
   useEffect(() => {
-    initTWE({ Input, Ripple,Collapse, Dropdown });
+    initTWE({ Collapse , Input});
   }, []);
   return (
     <>
-      <Acordeon />
+    <div className='container'>
+      <Acordeon></Acordeon>
+    </div>
     </>
   )
 }
